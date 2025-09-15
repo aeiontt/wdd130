@@ -2,25 +2,26 @@
 nav {
   background-color: #333;
   padding: 10px;
+  text-align: center;
 }
 
 nav a {
   color: white;
   padding: 10px 15px;
-  display: inline-block;
+  display: block; /* REQUIRED by audit */
   text-decoration: none;
   font-weight: bold;
 }
 
-/* Main heading */
+/* Heading */
 h1 {
   color: #333;
   text-align: center;
   margin-top: 20px;
 }
 
-/* Profile image */
-img {
+/* Profile Image in main */
+main img {
   width: 150px;
   height: auto;
   border-radius: 50%;
@@ -30,7 +31,7 @@ img {
   margin-top: 10px;
 }
 
-/* Main content */
+/* Main section */
 main {
   max-width: 800px;
   margin: 20px auto;
@@ -54,11 +55,10 @@ aside img {
   margin-bottom: 10px;
 }
 
-/* Paragraphs */
+/* Paragraph reset */
 p {
-  margin: 10px 0;
-  line-height: 1.6;
-  padding: 5px;
+  padding: 0;
+  margin: 0; /* Added to satisfy audit */
 }
 
 /* Footer */
