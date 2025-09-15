@@ -1,10 +1,39 @@
-/* Limit the main content width */
+/* Header and Nav */
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+/* Main Heading */
+h1 {
+  color: darkgreen;
+  text-align: center;
+}
+
+/* Images */
+img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+  border: 2px solid #333;
+  padding: 5px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Main section */
 main {
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* Aside styling */
+/* Aside section */
 aside {
   width: 250px;
   margin: 20px auto;
@@ -16,36 +45,18 @@ aside {
   border-radius: 8px;
 }
 
-/* Aside image */
 aside img {
   width: 200px;
   height: auto;
   margin-bottom: 10px;
 }
 
-body {
-  background-color: lightblue;
-}
-
-h1 {
-  color: darkgreen;
-  text-align: center;
-}
-
-/* Prevent main img from being affected */
-main img {
-  width: 150px;
-  height: auto;
-  display: block;
-  margin: 15px auto;
-}
-
-/* Reset paragraph padding */
+/* Paragraphs */
 p {
   padding: 0;
 }
 
-/* Footer styling */
+/* Footer */
 footer {
   margin-top: 20px;
   border-top: 2px solid #333;
