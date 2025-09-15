@@ -1,30 +1,33 @@
-/* General reset */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
-/* Header navigation */
-header {
-  background-color: #333;
-  padding: 10px 0;
-}
-
+/* Navigation */
 nav {
-  text-align: center;
+  background-color: #333;
+  padding: 10px;
 }
 
 nav a {
   color: white;
-  margin: 0 15px;
+  padding: 10px 15px;
+  display: inline-block;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav a:hover {
-  text-decoration: underline;
+/* Main heading */
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Profile image */
+img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #333;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin-top: 10px;
 }
 
 /* Main content */
@@ -32,14 +35,6 @@ main {
   max-width: 800px;
   margin: 20px auto;
   text-align: center;
-}
-
-/* Profile image */
-main img {
-  width: 150px;
-  height: auto;
-  border-radius: 50%;
-  margin-top: 10px;
 }
 
 /* Aside section */
@@ -53,11 +48,17 @@ aside {
   text-align: center;
 }
 
-/* Aside image */
 aside img {
   width: 200px;
   height: auto;
   margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+  margin: 10px 0;
+  line-height: 1.6;
+  padding: 5px;
 }
 
 /* Footer */
