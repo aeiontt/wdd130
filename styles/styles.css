@@ -1,44 +1,50 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
 /* Navigation */
 nav {
   background-color: #333;
   padding: 10px;
-  text-align: center;
 }
-
 nav a {
   color: white;
   padding: 10px 15px;
-  display: block; /* REQUIRED by audit */
+  display: inline-block;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* Heading */
+/* Main Heading */
 h1 {
   color: #333;
   text-align: center;
   margin-top: 20px;
 }
 
-/* Profile Image in main */
-main img {
+/* Profile Image */
+img {
   width: 150px;
   height: auto;
   border-radius: 50%;
   border: 2px solid #333;
   padding: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin-top: 10px;
 }
 
-/* Main section */
+/* Main Section */
 main {
   max-width: 800px;
   margin: 20px auto;
   text-align: center;
 }
 
-/* Aside section */
+/* Aside Section */
 aside {
   width: 250px;
   margin: 20px auto;
@@ -48,17 +54,15 @@ aside {
   color: #333;
   text-align: center;
 }
-
 aside img {
   width: 200px;
   height: auto;
   margin-bottom: 10px;
 }
 
-/* Paragraph reset */
+/* Paragraphs */
 p {
-  padding: 0;
-  margin: 0; /* Added to satisfy audit */
+  margin: 10px 0;
 }
 
 /* Footer */
