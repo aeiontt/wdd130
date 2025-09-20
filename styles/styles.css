@@ -1,74 +1,101 @@
-/* General Reset */
-body {
-  font-family: Arial, sans-serif;
+:root {
+  --primary-color: #003366;
+  --accent1-color: #006699;
+  --heading-font: 'Georgia', serif;
+  --body-font: Arial, sans-serif;
+}
+
+/* Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  margin: 20px;
   line-height: 1.6;
 }
 
-/* Navigation */
-nav {
-  background-color: #333;
+header, footer {
+  background: #f4f4f4;
   padding: 10px;
+  text-align: center;
 }
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
 nav a {
-  color: white;
-  padding: 10px 15px;
-  display: inline-block;
+  margin: 0 10px;
   text-decoration: none;
+  color: #333;
   font-weight: bold;
 }
 
-/* Main Heading */
-h1 {
-  color: #333;
+main {
+  max-width: 840px;
+  margin: 20px auto;
   text-align: center;
+}
+
+aside {
+  background: #eee;
+  padding: 10px;
   margin-top: 20px;
 }
 
-/* Profile Image */
-img {
+aside img {
   width: 150px;
   height: auto;
-  border-radius: 50%;
-  border: 2px solid #333;
-  padding: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin-top: 10px;
 }
 
-/* Main Section */
-main {
-  max-width: 800px;
-  margin: 20px auto;
-  text-align: center;
-}
-
-/* Aside Section */
-aside {
-  width: 250px;
-  margin: 20px auto;
-  border: 1px solid #ccc;
-  padding: 15px;
-  background-color: #f4f4f4;
-  color: #333;
-  text-align: center;
-}
-aside img {
-  width: 200px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-/* Paragraphs */
-p {
+footer p {
   margin: 10px 0;
 }
 
-/* Footer */
-footer {
-  margin-top: 20px;
-  border-top: 2px solid #333;
+.socialmedia a {
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* Hero Section (Week 3) */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
   text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.8);
   padding: 10px;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 10px;
 }
