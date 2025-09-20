@@ -1,71 +1,151 @@
-/* General Reset */
-body {
-  font-family: Arial, sans-serif;
+/* Reset and Box Model */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Navigation */
-nav {
-  background-color: #333;
-  padding: 10px;
+/* Colors & Fonts */
+:root {
+  --body-font: Arial, sans-serif;
+  --heading-font: Georgia, serif;
+  --primary-color: #003366;
+  --accent-color: #006699;
+  --text-color: #222;
+  --bg-light: #f4f4f4;
 }
+
+/* Body */
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+  background-color: var(--primary-color);
+}
+
+nav {
+  padding: 10px;
+  text-align: center;
+}
+
 nav a {
   color: white;
   padding: 10px 15px;
-  display: block; /* Required for validation */
+  display: block; /* required for audit */
   text-decoration: none;
   font-weight: bold;
 }
 
-/* Main Section */
-h1 {
-  color: #333;
-  text-align: center;
-  margin-top: 20px;
-}
-
+/* Main Content */
 main {
   max-width: 800px;
   margin: 20px auto;
   text-align: center;
 }
 
-img {
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin: 16px 0;
+}
+
+.profile-img {
   width: 150px;
   height: auto;
   border-radius: 50%;
-  border: 2px solid #333;
+  border: 2px solid var(--primary-color);
   padding: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-p {
-  padding: 0;
-  margin: 0;
-}
-
-/* Aside Section */
-aside {
-  width: 250px;
-  margin: 20px auto;
-  border: 1px solid #ccc;
-  padding: 15px;
-  background-color: #f4f4f4;
-  color: #333;
-  text-align: center;
-}
-aside img {
+.flag-img {
   width: 200px;
   height: auto;
   margin-bottom: 10px;
 }
 
+/* Aside */
+aside {
+  width: 250px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: var(--bg-light);
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* Rafting Section */
+.rafting-section .hero {
+  position: relative;
+  margin: 20px auto;
+}
+
+.rafting-section .hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.rafting-section .hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  background-color: var(--accent-color);
+  color: white;
+  opacity: 0.8;
+}
+
+.rafting-section .hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(255,255,255,0.9);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.rafting-section .hero article img {
+  float: right;
+  width: 125px;
+  height: auto;
+  margin-left: 12px;
+  border-radius: 4px;
+}
+
+/* Paragraphs */
+p {
+  padding: 0;
+  margin: 8px 0;
+}
+
 /* Footer */
 footer {
   margin-top: 20px;
-  border-top: 2px solid #333;
+  border-top: 2px solid var(--primary-color);
+  padding: 12px 0;
   text-align: center;
-  padding: 10px;
+}
+
+.socialmedia {
+  margin-top: 10px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.socialmedia img {
+  width: 30px;
+  height: auto;
+  display: inline-block;
 }
