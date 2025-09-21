@@ -2,108 +2,74 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Damilare Bamisile | WDD 130</title>
     <meta name="description"
-        content="Damilare Bamisile | WDD 130 homepage, personal profile and rafting project overview.">
+        content="Damilare Bamisile | WDD 130 Homepage, personal profile and class project overview.">
     <meta name="author" content="Damilare Bamisile">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-
-    <!-- SITE HEADER (Week1/2) -->
-    <header class="site-header">
-        <h1 class="site-title">Damilare Bamisile | WDD 130</h1>
-        <nav class="main-nav">
-            <a href="#">Home</a>
-            <a href="wwr/about.html">Rafting Website (About)</a>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="wwr/">Rafting Website</a>
         </nav>
     </header>
 
     <main>
-        <!-- WEEK 1 (profile + intro) -->
-        <section id="week1" class="card">
-            <h2>Week 1 — About Me</h2>
-            <div class="profile-block">
-                <img class="profile-img" src="images/profile.jpg" alt="Hello, my name is Damilare Bamisile">
-                <div class="profile-text">
-                    <p>Hello! My name is Damilare Bamisile. I am from Nigeria and I study Accounting at Lagos State
-                        University of Science and Technology. This site is my WDD 130 project where I learn web
-                        fundamentals.</p>
-                </div>
-            </div>
+        <h1>Damilare Bamisile | WDD 130</h1>
+        <img src="images/profile.jpg" alt="Hello, my name is Damilare Bamisile" class="profile">
+        <p>Hello! My name is Damilare Bamisile, a student of Lagos State University of Science and Technology, studying
+            Accounting. This website will include my WDD130 projects.</p>
+
+        <!-- Week 2: Country Section -->
+        <aside>
+            <h2>Nigeria</h2>
+            <img src="images/nigeria-flag.png" alt="Flag of Nigeria">
+            <p>Nigeria is a diverse country in West Africa, known for its culture, history, and beautiful landscapes.
+            </p>
+        </aside>
+
+        <!-- Week 3: Rafting Website Sections -->
+        <section class="hero">
+            <img src="wwr/images/hero.jpg" alt="Rafting adventure hero image">
+            <h2>Welcome to Our Rafting Company</h2>
+            <p>Experience the thrill of white-water rafting with the best guides and stunning rivers.</p>
         </section>
 
-        <!-- WEEK 2 (enhancements + flag aside) -->
-        <section id="week2" class="card">
-            <h2>Week 2 — Enhancements</h2>
-            <p>In Week 2 I added meta tags, improved structure, and linked CSS.</p>
-
-            <aside class="flag-aside">
-                <h3>Nigeria</h3>
-                <img class="flag-img" src="images/nigeria-flag.png" alt="Flag of Nigeria">
-                <p>Nigeria: a vibrant country in West Africa, with rich culture and a growing tech scene.</p>
-            </aside>
+        <section class="history">
+            <h2>Our History</h2>
+            <img src="wwr/images/history.jpg" alt="Rafting history image">
+            <p>Founded in 1995, our company has guided thousands of adventurers safely through the rapids. Our passion
+                is creating unforgettable experiences.</p>
         </section>
 
-        <!-- WEEK 3 (Rafting project content embedded here) -->
-        <section id="week3" class="card rafting">
-            <h2>Week 3 — Rafting Project (About Us)</h2>
+        <section class="why-us">
+            <h2>Why Choose Us?</h2>
+            <img src="wwr/images/happy-client.jpg" alt="Happy rafting client">
+            <p>We prioritize safety, fun, and adventure. With certified guides and modern equipment, your rafting trip
+                is guaranteed to be amazing!</p>
+        </section>
 
-            <!-- rafting header inside the page -->
-            <header class="rafting-header">
-                <img class="rafting-logo" src="wwr/images/logo.png" alt="Wild Rapids Rafting Logo">
-                <nav class="rafting-nav">
-                    <a href="index.html">Course Home</a>
-                    <a href="wwr/about.html">About</a>
-                    <a href="wwr/trips.html">Trips</a>
-                    <a href="wwr/contact.html">Contact</a>
-                </nav>
-            </header>
-
-            <!-- Hero with overlay -->
-            <div class="hero">
-                <img class="hero-img" src="wwr/images/hero.jpg" alt="Rafting adventure">
-                <h1 class="hero-title">Wild Rapids Rafting</h1>
-
-                <article class="hero-article">
-                    <img class="article-img" src="wwr/images/happy-client.jpg" alt="Happy rafting client">
-                    <p>At Wild Rapids, our mission is to create safe, unforgettable rafting experiences. We provide
-                        guided trips for all skill levels, expert instruction, and the best local guides.</p>
-                </article>
-            </div>
-
-            <section class="history">
-                <h3>History</h3>
-                <p>Established in 2005, Wild Rapids began as a small guide service and has grown into a full-service
-                    rafting company dedicated to safety and great customer experiences.</p>
-                <img class="history-img" src="wwr/images/history.jpg" alt="Company history">
-            </section>
-
-            <section class="why-choose">
-                <h3>Adventure Awaits You!</h3>
-                <p>We offer short and multi-day trips for families and thrill seekers alike.</p>
-                <img class="fun-img" src="wwr/images/rafting-fun.jpg" alt="Rafting fun">
-            </section>
-
-            <!-- rafting footer inside the Week3 section -->
-            <footer class="rafting-footer">
-                <p>© 2025 Wild Rapids Rafting | Damilare Bamisile</p>
-                <nav class="socialmedia">
-                    <a class="social-link" href="https://facebook.com" aria-label="Facebook"><img class="social-icon"
-                            src="wwr/images/facebook.png" alt="Facebook"></a>
-                    <a class="social-link" href="https://instagram.com" aria-label="Instagram"><img class="social-icon"
-                            src="wwr/images/instagram.png" alt="Instagram"></a>
-                    <a class="social-link" href="https://twitter.com" aria-label="Twitter"><img class="social-icon"
-                            src="wwr/images/twitter.png" alt="Twitter"></a>
-                </nav>
-            </footer>
-
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <img src="wwr/images/team.jpg" alt="Rafting company team">
+            <p>Our team is made up of experienced rafting professionals who are dedicated to making your trip both safe
+                and exciting.</p>
         </section>
     </main>
 
+    <footer>
+        <p>&copy; 2025 Damilare Bamisile, Nigeria</p>
+        <div class="social">
+            <a href="#"><img src="wwr/images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="wwr/images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="wwr/images/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
 </body>
 
 </html>
