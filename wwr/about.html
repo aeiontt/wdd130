@@ -2,97 +2,108 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD130 - Dare’s Web Fundamentals</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Damilare Bamisile | WDD 130</title>
     <meta name="description"
-        content="WDD130 Web Fundamentals assignments by Damilare Bamisile. Includes Week 1 profile, Week 2 enhancements, and Week 3 Rafting Project.">
+        content="Damilare Bamisile | WDD 130 homepage, personal profile and rafting project overview.">
     <meta name="author" content="Damilare Bamisile">
-    <link rel="stylesheet" href="wwr/styles/rafting.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>WDD130: Web Fundamentals</h1>
-        <nav>
-            <a href="#week1">Week 1</a>
-            <a href="#week2">Week 2</a>
-            <a href="#week3">Week 3 - Rafting Project</a>
+
+    <!-- SITE HEADER (Week1/2) -->
+    <header class="site-header">
+        <h1 class="site-title">Damilare Bamisile | WDD 130</h1>
+        <nav class="main-nav">
+            <a href="#">Home</a>
+            <a href="wwr/about.html">Rafting Website (About)</a>
         </nav>
     </header>
 
     <main>
-        <!-- WEEK 1 -->
-        <section id="week1">
-            <h2>Week 1 – About Me</h2>
-            <img src="wwr/images/profile.jpg" alt="Profile Picture" width="200">
-            <img src="wwr/images/nigeria-flag.png" alt="Nigeria Flag" width="150">
-            <p>Hello, my name is Damilare Bamisile. I am studying Accounting at Lagos State University of Science and
-                Technology. I am excited to learn web development!</p>
+        <!-- WEEK 1 (profile + intro) -->
+        <section id="week1" class="card">
+            <h2>Week 1 — About Me</h2>
+            <div class="profile-block">
+                <img class="profile-img" src="images/profile.jpg" alt="Hello, my name is Damilare Bamisile">
+                <div class="profile-text">
+                    <p>Hello! My name is Damilare Bamisile. I am from Nigeria and I study Accounting at Lagos State
+                        University of Science and Technology. This site is my WDD 130 project where I learn web
+                        fundamentals.</p>
+                </div>
+            </div>
         </section>
 
-        <!-- WEEK 2 -->
-        <section id="week2">
-            <h2>Week 2 – Enhancements</h2>
-            <p>For Week 2, I practiced creating folders, linking CSS, and adding images correctly inside the project
-                structure.</p>
+        <!-- WEEK 2 (enhancements + flag aside) -->
+        <section id="week2" class="card">
+            <h2>Week 2 — Enhancements</h2>
+            <p>In Week 2 I added meta tags, improved structure, and linked CSS.</p>
+
+            <aside class="flag-aside">
+                <h3>Nigeria</h3>
+                <img class="flag-img" src="images/nigeria-flag.png" alt="Flag of Nigeria">
+                <p>Nigeria: a vibrant country in West Africa, with rich culture and a growing tech scene.</p>
+            </aside>
         </section>
 
-        <!-- WEEK 3 -->
-        <section id="week3">
-            <h2>Week 3 – Rafting Project</h2>
+        <!-- WEEK 3 (Rafting project content embedded here) -->
+        <section id="week3" class="card rafting">
+            <h2>Week 3 — Rafting Project (About Us)</h2>
 
+            <!-- rafting header inside the page -->
             <header class="rafting-header">
-                <img src="wwr/images/logo.png" alt="Wild Rapids Rafting Logo" width="120">
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="wwr/about.html">About Us</a>
+                <img class="rafting-logo" src="wwr/images/logo.png" alt="Wild Rapids Rafting Logo">
+                <nav class="rafting-nav">
+                    <a href="index.html">Course Home</a>
+                    <a href="wwr/about.html">About</a>
                     <a href="wwr/trips.html">Trips</a>
                     <a href="wwr/contact.html">Contact</a>
                 </nav>
             </header>
 
+            <!-- Hero with overlay -->
             <div class="hero">
-                <img src="wwr/images/hero.jpg" alt="Rafting Adventure">
-                <h1>Wild Rapids Rafting</h1>
-                <article>
-                    <img src="wwr/images/happy-client.jpg" alt="Happy Client">
-                    <p>
-                        At Wild Rapids Rafting, our mission is to provide unforgettable rafting experiences while
-                        ensuring safety and fun for all our adventurers.
-                    </p>
+                <img class="hero-img" src="wwr/images/hero.jpg" alt="Rafting adventure">
+                <h1 class="hero-title">Wild Rapids Rafting</h1>
+
+                <article class="hero-article">
+                    <img class="article-img" src="wwr/images/happy-client.jpg" alt="Happy rafting client">
+                    <p>At Wild Rapids, our mission is to create safe, unforgettable rafting experiences. We provide
+                        guided trips for all skill levels, expert instruction, and the best local guides.</p>
                 </article>
             </div>
 
-            <section>
-                <h2>Our History</h2>
-                <p>
-                    Established in 2005, Wild Rapids Rafting has grown from a small family business into one of the top
-                    rafting companies in the region. With decades of combined experience, our team is passionate about
-                    sharing the thrill of rafting.
-                </p>
-                <img src="wwr/images/history.jpg" alt="Rafting History">
+            <section class="history">
+                <h3>History</h3>
+                <p>Established in 2005, Wild Rapids began as a small guide service and has grown into a full-service
+                    rafting company dedicated to safety and great customer experiences.</p>
+                <img class="history-img" src="wwr/images/history.jpg" alt="Company history">
             </section>
 
-            <section>
-                <h2>Why Choose Us?</h2>
-                <p>
-                    From exciting rapids to calm family-friendly floats, we have trips for every level. Our expert
-                    guides, top-quality gear, and dedication to safety set us apart.
-                </p>
-                <img src="wwr/images/rafting-fun.jpg" alt="Rafting Fun">
+            <section class="why-choose">
+                <h3>Adventure Awaits You!</h3>
+                <p>We offer short and multi-day trips for families and thrill seekers alike.</p>
+                <img class="fun-img" src="wwr/images/rafting-fun.jpg" alt="Rafting fun">
             </section>
 
-            <footer>
-                <p>&copy; 2025 Wild Rapids Rafting | Damilare Bamisile</p>
-                <div class="socialmedia">
-                    <a href="https://facebook.com"><img src="wwr/images/facebook.png" alt="Facebook"></a>
-                    <a href="https://instagram.com"><img src="wwr/images/instagram.png" alt="Instagram"></a>
-                    <a href="https://twitter.com"><img src="wwr/images/twitter.png" alt="Twitter"></a>
-                </div>
+            <!-- rafting footer inside the Week3 section -->
+            <footer class="rafting-footer">
+                <p>© 2025 Wild Rapids Rafting | Damilare Bamisile</p>
+                <nav class="socialmedia">
+                    <a class="social-link" href="https://facebook.com" aria-label="Facebook"><img class="social-icon"
+                            src="wwr/images/facebook.png" alt="Facebook"></a>
+                    <a class="social-link" href="https://instagram.com" aria-label="Instagram"><img class="social-icon"
+                            src="wwr/images/instagram.png" alt="Instagram"></a>
+                    <a class="social-link" href="https://twitter.com" aria-label="Twitter"><img class="social-icon"
+                            src="wwr/images/twitter.png" alt="Twitter"></a>
+                </nav>
             </footer>
+
         </section>
     </main>
+
 </body>
 
 </html>
