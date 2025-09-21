@@ -1,34 +1,8 @@
-/* Reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* CSS Variables */
-:root {
-  --primary-color: #1a73e8;
-  --accent1-color: #333;
-  --heading-font: Arial, Helvetica, sans-serif;
-  --body-font: Verdana, sans-serif;
-}
-
-/* General */
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-  line-height: 1.6;
-}
-
-header, main, footer {
-  max-width: 840px;
-  margin: 0 auto;
-}
-
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  margin: 16px 0;
 }
 
 /* Navigation */
@@ -46,14 +20,19 @@ nav a {
   font-weight: bold;
 }
 
-/* Profile Section */
-main {
-  max-width: 800px;
-  margin: 20px auto;
-  text-align: center;
+nav a:hover {
+  background-color: #555;
 }
 
-main img {
+/* Headings */
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Images */
+img {
   width: 150px;
   height: auto;
   border-radius: 50%;
@@ -61,6 +40,17 @@ main img {
   padding: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   margin-top: 10px;
+}
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+main section {
+  margin: 20px 0;
 }
 
 /* Aside */
@@ -78,50 +68,16 @@ aside img {
   width: 200px;
   height: auto;
   margin-bottom: 10px;
-}
-
-p {
+  border-radius: 0; /* keep flag rectangular */
+  border: none;
+  box-shadow: none;
   padding: 0;
 }
 
-/* Hero Section */
-.hero {
-  position: relative;
-  text-align: center;
-  margin: 20px 0;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff;
-}
-
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  background: rgba(255,255,255,0.8);
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 10px;
+/* Paragraphs */
+p {
+  margin-top: 10px;
+  line-height: 1.6;
 }
 
 /* Footer */
@@ -130,14 +86,4 @@ footer {
   border-top: 2px solid #333;
   text-align: center;
   padding: 10px;
-}
-
-.socialmedia a {
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-.socialmedia img {
-  width: 30px;
-  height: 30px;
 }
