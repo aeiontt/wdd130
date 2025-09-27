@@ -65,6 +65,8 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
+  max-height: 500px;/*keeps image reasonable */
+  overflow: hidden;
   position: relative;
   text-align: center;
   color: white;
@@ -80,22 +82,27 @@ nav a:hover {
 
 .hero h1 {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 2rem;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem;
+  transform: translate(-50%,-50%);
+  width: auto;
   text-align: center;
   padding: 0.5rem;
   opacity: 0.8;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(0, 0, 0, 0.6);
   color: #fff;
+  border-radius: 5px;
 }
 
 .hero article {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  width: 300px;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 600px;
+  border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   padding: 1rem;
@@ -111,8 +118,8 @@ nav a:hover {
 
 /* Sections */
 section {
-  margin: 16px;
-  padding: 8px;
+  margin: 40px 0;
+  padding: 20px;
 }
 
 h2 {
@@ -145,12 +152,15 @@ align-items: center;
   flex-wrap: wrap;/*makes it responsive*/
 }
 .adventure-gallery figure{
-  flex: 1;
+  flex: 1 1 200px;/* flexible but minimum 200px wide*/
   text-align: center;
+  margin: 10px;
 
 }
 .adventure-gallery img{
   width: 100%;
+max-width: 250px;/*prevent giant stretch */
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   height: auto;
   border-radius: 5px;
 
@@ -160,7 +170,8 @@ align-items: center;
 footer {
   display: flex;
   justify-content: space-between;
-
+flex-wrap: wrap;
+text-align: center;
   background-color: var(--primary-color);
   color: white;
  
@@ -169,6 +180,7 @@ footer {
 }
 
 footer p {
+flex: 1 1 100%;
   margin-bottom: 10px;
 }
 
