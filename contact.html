@@ -2,75 +2,81 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Water Rafting | Contact Us</title>
+
+    <!-- Meta Tags -->
     <meta name="description"
-        content="Contact Dry Oar Rafting for inquiries, reservations, or website suggestions. Reach out to our team today!">
-    <meta name="author" content="Damilare Bamisile">
-    <title>Contact Us – Dry Oar Rafting</title>
+        content="Contact page for White Water Rafting company. Reach out to us for inquiries, reservations, or website suggestions.">
+    <meta name="author" content="Bamisile Oluwadamilare Emmanuel">
+
+    <!-- Link to Rafting CSS -->
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <!-- Header & Navigation (unchanged) -->
+    <!-- Header -->
     <header>
-        <img src="images/logo.png" alt="Dry Oar Rafting Logo" class="logo">
-        <p>Damilare Bamisile | WDD 130</p>
+        <img src="images/logo.png" alt="White Water Rafting Logo" width="150">
         <nav>
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <!-- Company Information -->
-        <section id="company-info">
-            <h2>Contact Information</h2>
-            <p><strong>Address:</strong> 123 River Road, Adventure Town, Nigeria</p>
-            <p><strong>Phone:</strong> +234 801 234 5678</p>
-            <p><strong>Email:</strong> info@dryoarrafting.com</p>
+        <h1>Contact Us</h1>
+
+        <!-- Company Info -->
+        <section>
+            <h2>Our Office</h2>
+            <p>Address: 123 Adventure Lane, Lagos, Nigeria</p>
+            <p>Phone: +234 800 123 4567</p>
+            <p>Email: info@whitewaterrafting.com</p>
+
+            <!-- Embedded Google Map -->
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1264.123456!2d3.123456!3d6.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9abcdef!2sDry%20Oar%20Rafting!5e0!3m2!1sen!2sng!4v1234567890"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.123456789!2d3.3792!3d6.5244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf123456789ab%3A0x1234567890abcdef!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1690000000000"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
 
-        <!-- Employee Profiles -->
-        <section id="employees">
+        <!-- Employees Section -->
+        <section>
             <h2>Meet Our Team</h2>
-            <div class="employee-gallery">
-                <figure>
-                    <img src="images/employee1.jpg" alt="John Doe - Lead Guide">
-                    <figcaption>John Doe – Lead Guide</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee2.jpg" alt="Jane Smith - Safety Officer">
-                    <figcaption>Jane Smith – Safety Officer</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee3.jpg" alt="Mike Johnson - Reservation Manager">
-                    <figcaption>Mike Johnson – Reservation Manager</figcaption>
-                </figure>
-            </div>
+            <figure>
+                <img src="images/employee1.jpg" alt="Rafting Guide">
+                <figcaption>John Doe - Rafting Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpg" alt="Safety Officer">
+                <figcaption>Jane Smith - Safety Officer</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.jpg" alt="Operations Manager">
+                <figcaption>Mark Johnson - Operations Manager</figcaption>
+            </figure>
         </section>
 
         <!-- Contact Form -->
-        <section id="contact-form">
+        <section>
             <h2>Send Us a Message</h2>
             <form action="#" method="post">
-                <label for="name">Name:</label>
+                <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
+                <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <fieldset>
-                    <legend>Purpose of Message:</legend>
-                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
-                </fieldset>
+                <p>Purpose of your message:</p>
+                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
+                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+                <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
@@ -79,19 +85,19 @@
                     <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
                 </label>
 
-                <button type="submit">Submit Message</button>
+                <button type="submit">Submit</button>
             </form>
         </section>
     </main>
 
-    <!-- Footer (unchanged) -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Dry Oar Rafting | Damilare Bamisile</p>
-        <div class="socialmedia" aria-label="Social Media">
-            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
-        </div>
+        <p>©2025 White Water Rafting | Bamisile Oluwadamilare Emmanuel</p>
+        <nav class="socialmedia">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        </nav>
     </footer>
 </body>
 

@@ -1,0 +1,73 @@
+/* ============================= */
+/* WDD130 Home Page CSS           */
+/* File: styles/styles.css       */
+/* Applies only to index.html    */
+/* ============================= */
+
+:root {
+  --primary-color: #004080;
+  --secondary-color: #00bfff;
+  --accent-color: #ffcc00;
+  --body-font: Arial, sans-serif;
+  --heading-font: 'Helvetica Neue', sans-serif;
+  --accent1-color: #333333;
+}
+
+/* Reset margin, padding, box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body font and color */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: #f9f9f9;
+}
+
+/* Main layout */
+header, main, aside, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* Navigation links */
+nav a {
+  margin-right: 16px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* Home page main image */
+main img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 16px 0;
+}
+
+/* Aside (country/state info) */
+aside {
+  width: 300px;
+  margin: 16px auto;
+  border: 1px solid var(--primary-color);
+  padding: 8px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  text-align: center;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 16px;
+  border-top: 1px solid var(--primary-color);
+  text-align: center;
+  padding: 8px 0;
+}
