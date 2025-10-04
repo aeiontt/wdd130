@@ -1,52 +1,60 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Damilare's WDD130 Home Page</title>
-
-    <meta name="description"
-        content="WDD130 Home Page for Bamisile Oluwadamilare Emmanuel. Personal site with rafting project introduction.">
-    <meta name="author" content="Bamisile Oluwadamilare Emmanuel">
-
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Dare's Home Page</title>
+    <link rel="stylesheet" href="wwr/styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <h1>Welcome to My WDD130 Home Page</h1>
+        <img src="wwr/images/logo.png" alt="Rafting Company Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="wwr/about.html">About Us</a>
+            <a href="wwr/trips.html">Trips</a>
+            <a href="wwr/contact.html">Contact</a>
+        </nav>
     </header>
 
     <main>
-        <!-- About Me -->
-        <section>
-            <h2>About Me</h2>
-            <img src="images/profile.jpg" alt="Profile picture of Damilare" width="200">
-            <p>Hello! My name is <strong>Bamisile Oluwadamilare Emmanuel</strong>.
-                I’m an Accounting student at LASUSTECH, currently taking Web Fundamentals (WDD130).
-                This homepage is where I’ll share my learning journey.</p>
+        <!-- Nigerian Flag Section -->
+        <section class="intro">
+            <h1>Welcome to My Home Page</h1>
+            <p>My name is Dare Bamisile, and I’m from Nigeria.</p>
+            <img src="nigeria-flag.png" alt="Nigerian Flag" style="width:150px; margin-top:10px;">
         </section>
 
-        <!-- Rafting Project Intro -->
-        <section>
-            <h2>Rafting Website Project</h2>
-            <p>As part of this course, I’m building a sample business website for a rafting company.
-                It introduces the company, shows the trips they offer, and gives contact details for adventure seekers.
-                You can start exploring it by visiting the <a href="wwr/about.html">About Us page</a>.</p>
-            <img src="wwr/images/hero.jpg" alt="Rafting adventure" width="400">
+        <!-- Rafting Intro -->
+        <section class="hero">
+            <img src="wwr/images/hero.jpg" alt="Rafting Adventure">
+            <h2>White Water Rafting Adventure</h2>
         </section>
 
-        <!-- Extra Fun -->
-        <section>
-            <h2>Fun Extra</h2>
-            <p>Here’s the flag of Nigeria 🇳🇬:</p>
-            <img src="images/nigeria-flag.png" alt="Nigerian flag" width="150">
+        <section class="intro">
+            <h2>Discover the Thrill</h2>
+            <p>
+                This site is part of my WDD130 coursework. You’ll also find our rafting project
+                where you can learn more about rafting, see exciting trips, and contact us.
+            </p>
         </section>
     </main>
 
     <footer>
-        <p>©2025 | Bamisile Oluwadamilare Emmanuel</p>
+        <p>&copy; 2025 White Water Rafting | Dare Bamisile</p>
+        <div class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="wwr/images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="wwr/images/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="wwr/images/instagram.png" alt="Instagram">
+            </a>
+        </div>
     </footer>
 </body>
 
