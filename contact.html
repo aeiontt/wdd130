@@ -37,7 +37,25 @@
                 <label for="phone">Phone:</label>
                 <input type="tel" id="phone" name="phone">
 
-                <!-- Trip Interest -->
+                <!-- Radio Buttons -->
+                <p>How did you hear about us?</p>
+                <label for="social">
+                    <input type="radio" id="social" name="referral" value="social"> Social Media
+                </label>
+                <label for="friend">
+                    <input type="radio" id="friend" name="referral" value="friend"> Friend
+                </label>
+                <label for="ad">
+                    <input type="radio" id="ad" name="referral" value="ad"> Advertisement
+                </label>
+
+                <!-- Checkbox -->
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    Subscribe to our newsletter
+                </label>
+
+                <!-- Select -->
                 <label for="trip">Interested In:</label>
                 <select id="trip" name="trip">
                     <option value="family">Family Adventure</option>
@@ -49,9 +67,18 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
 
-                <!-- Submit Button -->
+                <!-- Submit -->
                 <button type="submit">Send</button>
             </form>
+        </section>
+
+        <!-- Google Map Embed -->
+        <section class="map">
+            <h2>Find Us Here</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.308540983221!2d3.3255!3d6.6023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b92b0f2d6d4f7%3A0xf78c4a59e51c!2sLagos!5e0!3m2!1sen!2sng!4v1696857867892"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
     </main>
 
