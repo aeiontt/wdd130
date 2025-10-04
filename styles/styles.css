@@ -1,73 +1,73 @@
-/* ============================= */
-/* WDD130 Home Page CSS           */
-/* File: styles/styles.css       */
-/* Applies only to index.html    */
-/* ============================= */
-
-:root {
-  --primary-color: #004080;
-  --secondary-color: #00bfff;
-  --accent-color: #ffcc00;
-  --body-font: Arial, sans-serif;
-  --heading-font: 'Helvetica Neue', sans-serif;
-  --accent1-color: #333333;
+/* About Page Styles */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
 }
 
-/* Reset margin, padding, box-sizing */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body font and color */
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-  background-color: #f9f9f9;
-}
-
-/* Main layout */
-header, main, aside, footer {
-  width: 840px;
-  margin: 0 auto;
-}
-
-/* Navigation links */
-nav a {
-  margin-right: 16px;
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
-/* Home page main image */
-main img {
-  width: 200px;
+.hero img {
+  width: 100%;
   height: auto;
   display: block;
-  margin: 16px 0;
+  border-radius: 8px;
 }
 
-/* Aside (country/state info) */
-aside {
-  width: 300px;
-  margin: 16px auto;
-  border: 1px solid var(--primary-color);
-  padding: 8px;
-  background-color: var(--secondary-color);
-  color: #fff;
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 64, 128, 0.6); /* overlay color */
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 2rem;
+}
+
+.history {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.history h2 {
   text-align: center;
+  margin-bottom: 10px;
+  color: #004080;
 }
 
-aside img {
+.history p {
+  margin-bottom: 10px;
+}
+
+.adventure {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.adventure h2 {
+  margin-bottom: 15px;
+  color: #004080;
+}
+
+.adventure-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.adventure-images img {
   width: 200px;
   height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
-/* Footer styling */
-footer {
-  margin-top: 16px;
-  border-top: 1px solid var(--primary-color);
-  text-align: center;
-  padding: 8px 0;
+.adventure-images img:hover {
+  transform: scale(1.05);
 }

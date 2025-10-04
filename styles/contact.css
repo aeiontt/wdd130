@@ -1,0 +1,57 @@
+/* Contact Page Styles */
+.contact {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact h1, 
+.contact h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contact input, 
+.contact textarea, 
+.contact select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact button {
+  background-color: #004080; /* same as site theme */
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #003060;
+}

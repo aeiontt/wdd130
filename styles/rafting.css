@@ -1,144 +1,73 @@
-/* ============================= */
-/* WDD130 Rafting Site CSS       */
-/* File: wwr/styles/rafting.css  */
-/* Applies to about.html/contact.html */
-/* ============================= */
-
-:root {
-  --primary-color: #004080;
-  --secondary-color: #00bfff;
-  --accent-color: #ffcc00;
-  --body-font: Arial, sans-serif;
-  --heading-font: 'Helvetica Neue', sans-serif;
-  --accent1-color: #333333;
-}
-
-/* Reset margin, padding, box-sizing */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body font and color */
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-  background-color: #f9f9f9;
-}
-
-/* General layout for header, main, footer */
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
-}
-
-/* Header using Grid */
-header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-/* Navigation links using Flex */
-header nav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 16px;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
-/* Hero section */
+/* About Page Styles */
 .hero {
   position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .hero img {
-  display: block;
   width: 100%;
   height: auto;
+  display: block;
+  border-radius: 8px;
 }
 
 .hero h1 {
   position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 64, 128, 0.6); /* overlay color */
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 2rem;
+}
+
+.history {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.history h2 {
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff;
+  margin-bottom: 10px;
+  color: #004080;
 }
 
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color: rgba(255,255,255,0.8);
-  padding: 8px;
+.history p {
+  margin-bottom: 10px;
 }
 
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 8px;
+.adventure {
+  text-align: center;
+  margin: 30px auto;
 }
 
-/* Headings */
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  margin-bottom: 8px;
+.adventure h2 {
+  margin-bottom: 15px;
+  color: #004080;
 }
 
-/* Sections and articles */
-section, article, figure {
-  margin: 16px;
-  padding: 8px;
-}
-
-/* Figures (adventure images) */
-figure img {
-  width: 150px;
-  height: auto;
-  display: block;
-}
-
-/* Social media icons in footer */
-.socialmedia a {
-  text-decoration: none;
-  margin-left: 8px;
-}
-
-footer nav.socialmedia {
+.adventure-images {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 8px;
-  margin-top: 8px;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
 }
 
-/* Contact form styling */
-form input, form textarea, form button {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.adventure-images img {
+  width: 200px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
-form button {
-  background-color: var(--primary-color);
-  color: #fff;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-form button:hover {
-  background-color: var(--secondary-color);
+.adventure-images img:hover {
+  transform: scale(1.05);
 }
