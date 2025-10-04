@@ -1,3 +1,5 @@
+
+
 /* General Reset */
 * {
   margin: 0;
@@ -10,6 +12,15 @@ body {
   line-height: 1.6;
   background-color: #ffffff;
   color: #333;
+}
+
+/* Nigerian Flag */
+.flag {
+  width: 150px;
+  display: block;
+  margin: 15px auto;
+  border: 2px solid #004080; /* optional */
+  border-radius: 6px;
 }
 
 /* Header */

@@ -1,15 +1,4 @@
-/* Root variables */
-:root {
-  --primary-color: #004080;      /* Dark Blue */
-  --secondary-color: #00bfff;    /* Sky Blue */
-  --accent-color: #ffcc00;       /* Yellow */
-  --text-color: #333333;         /* Dark Gray */
-  --background-color: #ffffff;   /* White */
-  --heading-font: Arial, Helvetica, sans-serif;
-  --body-font: Verdana, Geneva, sans-serif;
-}
-
-/* Reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -17,184 +6,258 @@
 }
 
 body {
-  font-family: var(--body-font);
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--background-color);
+  background-color: #ffffff;
+  color: #333;
 }
 
-/* Limit width and center */
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
+/* Nigerian Flag */
+.flag {
+  width: 150px;
+  display: block;
+  margin: 15px auto;
+  border: 2px solid #004080; /* optional */
+  border-radius: 6px;
 }
 
 /* Header */
 header {
-  background-color: var(--primary-color);
+  background-color: #004080;
   color: white;
-  padding: 15px 20px;
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-}
-nav{
+  padding: 15px;
   display: flex;
-  justify-content: flex-end;
-  gap: 20px ;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header img {
-  height: 60px;
+  width: 120px;
+  height: auto;
 }
 
 nav {
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: var(--accent-color);
+  color: #ffcc00;
 }
 
 /* Hero Section */
 .hero {
-  max-height: 500px;/*keeps image reasonable */
-  overflow: hidden;
   position: relative;
   text-align: center;
   color: white;
-
+  margin-bottom: 20px;
 }
 
 .hero img {
-  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
 
 .hero h1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 2.5rem;
-  transform: translate(-50%,-50%);
-  width: auto;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 64, 128, 0.6);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 2rem;
+}
+
+/* About Page */
+.history {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.history h2 {
   text-align: center;
-  padding: 0.5rem 1rem;
-  opacity: 0.8;
-  background-color:rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #004080;
 }
 
-.hero article {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  max-width: 600px;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 1rem;
-  
-}
-
-.hero article img {
-  float: right;
-  margin-left: 1rem;
-  width: 200px;
-  height: auto;
-}
-
-/* Sections */
-section {
-  margin: 40px 0;
-  padding: 20px;
-}
-
-h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+.history p {
   margin-bottom: 10px;
 }
 
-p {
-  margin-bottom: 15px;
+.adventure {
+  text-align: center;
+  margin: 30px auto;
 }
-/*History section */
-.history{
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 2rem;
-align-items: center;  
-} 
-.history img{
+
+.adventure h2 {
+  margin-bottom: 15px;
+  color: #004080;
+}
+
+.adventure-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.adventure-images img {
+  width: 150px;  /* smaller images */
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.adventure-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Trips Page */
+.trips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.trips figure {
+  text-align: center;
+  width: 250px;
+}
+
+.trips figure img {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
 
+.trips figure img:hover {
+  transform: scale(1.05);
 }
-/* Adventure section */
-.adventure-gallery{
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-  flex-wrap: wrap;/*makes it responsive*/
+
+.trips figcaption {
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
 }
-.adventure-gallery figure{
-  flex: 1 1 200px;/* flexible but minimum 200px wide*/
+
+.trip-details {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.trip-details h2 {
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+.trip-details ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Contact Page */
+.contact {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact h1,
+.contact h2 {
   text-align: center;
-  margin: 10px;
-
+  margin-bottom: 15px;
 }
-.adventure-gallery img{
-  width: 100%;
-max-width: 250px;/*prevent giant stretch */
-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  height: auto;
-  border-radius: 5px;
 
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contact input,
+.contact textarea,
+.contact select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact button {
+  background-color: #004080;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #003060;
 }
 
 /* Footer */
 footer {
-  display: flex;
-  justify-content: space-between;
-flex-wrap: wrap;
-text-align: center;
-  background-color: var(--primary-color);
+  background-color: #004080;
   color: white;
- 
-  padding: 20px;
-  
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
 }
 
-footer p {
-flex: 1 1 100%;
-  margin-bottom: 10px;
-}
-
-.socialmedia {
+footer .socialmedia {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 15px;
+  margin-top: 10px;
 }
 
-.socialmedia a {
-  text-decoration: none;
-}
-
-.socialmedia img {
-  width: 30px;
+footer .socialmedia img {
+  width: 30px;  /* smaller icons */
   height: auto;
+  transition: transform 0.3s ease;
+}
+
+footer .socialmedia img:hover {
+  transform: scale(1.2);
 }
