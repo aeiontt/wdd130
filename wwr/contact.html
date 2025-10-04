@@ -1,103 +1,73 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>White Water Rafting | Contact Us</title>
-
-    <!-- Meta Tags -->
-    <meta name="description"
-        content="Contact page for White Water Rafting company. Reach out to us for inquiries, reservations, or website suggestions.">
-    <meta name="author" content="Bamisile Oluwadamilare Emmanuel">
-
-    <!-- Link to Rafting CSS -->
+    <title>Contact Us - White Water Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <!-- Header -->
     <header>
-        <img src="images/logo.png" alt="White Water Rafting Logo" width="150">
+        <img src="images/logo.png" alt="Rafting Company Logo">
         <nav>
-            <a href="index.html">Home</a>
+            <a href="../index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <h1>Contact Us</h1>
+        <section class="contact">
+            <h1>Contact Us</h1>
+            <p>Have questions or want to book a trip? Fill out the form below and we’ll get back to you!</p>
 
-        <!-- Company Info -->
-        <section>
-            <h2>Our Office</h2>
-            <p>Address: 123 Adventure Lane, Lagos, Nigeria</p>
-            <p>Phone: +234 800 123 4567</p>
-            <p>Email: info@whitewaterrafting.com</p>
-
-            <!-- Embedded Google Map -->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.123456789!2d3.3792!3d6.5244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf123456789ab%3A0x1234567890abcdef!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1690000000000"
-                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </section>
-
-        <!-- Employees Section -->
-        <section>
-            <h2>Meet Our Team</h2>
-            <figure>
-                <img src="images/employee1.jpg" alt="Rafting Guide">
-                <figcaption>John Doe - Rafting Guide</figcaption>
-            </figure>
-            <figure>
-                <img src="images/employee2.jpg" alt="Safety Officer">
-                <figcaption>Jane Smith - Safety Officer</figcaption>
-            </figure>
-            <figure>
-                <img src="images/employee3.jpg" alt="Operations Manager">
-                <figcaption>Mark Johnson - Operations Manager</figcaption>
-            </figure>
-        </section>
-
-        <!-- Contact Form -->
-        <section>
-            <h2>Send Us a Message</h2>
             <form action="#" method="post">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+                <!-- Full Name -->
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
 
-                <label for="email">Your Email:</label>
+                <!-- Email -->
+                <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <p>Purpose of your message:</p>
-                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-                <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+                <!-- Phone -->
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
 
+                <!-- Trip Interest -->
+                <label for="trip">Interested In:</label>
+                <select id="trip" name="trip">
+                    <option value="family">Family Adventure</option>
+                    <option value="extreme">Extreme Rapids</option>
+                    <option value="scenic">Scenic Tour</option>
+                </select>
+
+                <!-- Message -->
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <textarea id="message" name="message" required></textarea>
 
-                <label>
-                    <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
-                </label>
-
-                <button type="submit">Submit</button>
+                <!-- Submit Button -->
+                <button type="submit">Send</button>
             </form>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>©2025 White Water Rafting | Bamisile Oluwadamilare Emmanuel</p>
-        <nav class="socialmedia">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-        </nav>
+        <p>&copy; 2025 White Water Rafting | Dare Bamisile</p>
+        <div class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+        </div>
     </footer>
 </body>
 
