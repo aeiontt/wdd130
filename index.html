@@ -1,62 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Required meta tags -->
     <meta name="description"
-        content="Contact White Water Rafting to book your adventure, ask questions, or learn more about our trips.">
+        content="White Water Rafting home page – experience thrilling rafting trips, learn about us, and get started on your adventure.">
     <meta name="author" content="Dare Bamisile">
 
-    <title>Contact Us - White Water Rafting</title>
+    <title>Home - White Water Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Rafting Company Logo">
+        <img src="images/logo.png" alt="Rafting Company Logo" class="logo">
         <nav>
             <a href="index.html">Home</a>
-            <a href="wwr/about.html">About Us</a>
-            <a href="wwr/trips.html">Trips</a>
-            <a href="wwr/contact.html">Contact</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
     <main>
+        <!-- WEEK 1 & 2 CONTENT -->
         <section class="intro">
             <h1>Welcome to My Home Page</h1>
             <p>My name is Dare Bamisile, and I’m from Nigeria.</p>
-            <img src="nigeria_flag.png" alt="Nigerian Flag" class="flag">
+            <img src="nigeriaflag.png" alt="Flag of Nigeria" class="flag">
         </section>
 
-        <section class="hero">
-            <img src="images/hero.jpg" alt="Rafting team paddling through white water rapids">
-            <h2>White Water Rafting Adventure</h2>
+        <section class="intro">
+            <h2>Discover the Thrill</h2>
+            <p>
+                This site is part of my WDD130 coursework. You’ll also find our rafting project
+                where you can learn more about rafting, see exciting trips, and contact us.
+            </p>
         </section>
-    </main>
-    <section class="intro">
-        <h2>Discover the Thrill</h2>
-        <p>
-            This site is part of my WDD130 coursework. You’ll also find our rafting project
-            where you can learn more about rafting, see exciting trips, and contact us.
-        </p>
-    </section>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Rafting team paddling through white water rapids" class="hero-img">
+            <h2>White Water Rafting Adventure</h2>
+            <p>Experience the excitement of the river with safe, guided rafting tours for all levels.</p>
+            <a href="trips.html" class="btn">View Trips</a>
+        </section>
+
+        <!-- RAFTING INTRO -->
+        <section class="rafting-intro">
+            <h2>Why Choose Our Rafting Experience?</h2>
+            <p>We offer safe, fun, and unforgettable adventures for families, beginners, and thrill seekers.</p>
+        </section>
+
+        <!-- FEATURED TRIPS PREVIEW -->
+        <section class="featured-trips">
+            <h2>Featured Trips</h2>
+            <div class="trips-preview">
+                <article class="trip">
+                    <img src="images/trip1.jpg" alt="Family rafting on calm water">
+                    <h3>Family Adventure</h3>
+                    <p>Perfect for beginners and families. Safe and scenic!</p>
+                    <a href="trips.html" class="btn">See More</a>
+                </article>
+
+                <article class="trip">
+                    <img src="images/trip2.jpg" alt="Rafting on strong rapids">
+                    <h3>Extreme Rapids</h3>
+                    <p>High-adrenaline action for experienced rafters.</p>
+                    <a href="trips.html" class="btn">See More</a>
+                </article>
+
+                <article class="trip">
+                    <img src="images/trip3.jpg" alt="Scenic rafting with mountains">
+                    <h3>Scenic Tour</h3>
+                    <p>Relax and enjoy stunning views of nature.</p>
+                    <a href="trips.html" class="btn">See More</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter">
+            <h2>Join our Newsletter</h2>
+            <p>Get rafting tips, updates, and special offers!</p>
+            <form action="#" method="post" class="newsletter-form">
+                <label for="news-name">Full Name</label>
+                <input type="text" id="news-name" name="news-name" required>
+
+                <label for="news-email">Email Address</label>
+                <input type="email" id="news-email" name="news-email" required>
+
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="cta">
+            <h2>Ready for an Adventure?</h2>
+            <p>Book your rafting trip today and experience the excitement!</p>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 White Water Rafting | Dare Bamisile</p>
         <div class="socialmedia">
             <a href="https://facebook.com" target="_blank">
-                <img src="wwr/images/facebook.png" alt="Facebook">
+                <img src="images/facebook.png" alt="Visit our Facebook page">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img src="wwr/images/twitter.png" alt="Twitter">
+                <img src="images/twitter.png" alt="Visit our Twitter profile">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img src="wwr/images/instagram.png" alt="Instagram">
+                <img src="images/instagram.png" alt="Visit our Instagram profile">
             </a>
         </div>
     </footer>
